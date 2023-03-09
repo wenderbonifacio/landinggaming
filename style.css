@@ -1,0 +1,1426 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Soreveign';
+  src: url(assets/fontes/Sovereign-Regular.otf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* img {
+  filter: contrast(1.2) brightness(90%);
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.conteiner-header {
+  width: 100%;
+
+  position: relative;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+}
+
+.header-content-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 0%;
+}
+
+.header-texto-star {
+  width: 25%;
+  position: relative;
+  left: 30%;
+
+  filter: brightness(120%) contrast(200%);
+}
+
+.header-imagem-bonecao {
+  width: 70%;
+  position: relative;
+  right: 2%;
+
+  z-index: 9;
+}
+
+.header-texto-wars {
+  width: 25%;
+  position: relative;
+  right: 18%;
+
+  filter: brightness(120%) contrast(200%);
+}
+
+.conteiner-header-legiao {
+  width: 10%;
+  height: 10%;
+
+  position: absolute;
+  top: 62%;
+  right: 10%;
+
+  z-index: 19;
+}
+
+.header-legiao-image {
+  width: 100%;
+}
+
+.conteiner-section-estrutura {
+  width: 100%;
+  position: relative;
+}
+
+.imagemCantoMain {
+  width: 40%;
+
+  filter: unset;
+}
+
+.main-content-position {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0%;
+}
+
+.main-cardVermelho {
+  position: absolute;
+
+  width: 20%;
+
+  top: -4%;
+  left: 14%;
+
+  z-index: 10;
+}
+
+.main-cardVermelho:hover .conteiner-cardVermelho-text {
+  opacity: 1;
+}
+
+.imagem-cardVermelho-fundo {
+  width: 100%;
+  height: 100%;
+}
+
+.conteiner-cardVermelho-text {
+  position: absolute;
+  top: 0px;
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  height: 99%;
+
+  background-color: #2d2d2d23; /* apenas para develop */
+}
+
+.cardVermelho-title {
+  margin-top: 22%;
+  line-height: 140%;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 2.2vw;
+  font-family: 'Open Sans';
+
+  width: 50%;
+
+  color: whitesmoke;
+}
+
+.cardVermelho-paragraf {
+  margin-top: 22%;
+  margin-left: 4%;
+  text-align: start;
+
+  width: 90%;
+
+  font-size: 1vw;
+  font-weight: 100;
+  font-family: 'Open Sans';
+
+  color: whitesmoke;
+}
+
+.cardVermelho-button {
+  margin-top: 18%;
+  background-color: transparent;
+  padding: 4% 8%;
+  font-size: 1vw;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: whitesmoke;
+  border-radius: 5% 5%;
+  border: 2px solid whitesmoke;
+
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.cardVermelho-button:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.cardVermelho-button:focus-visible {
+  outline: 0;
+}
+
+.main-cardAboutGame {
+  position: absolute;
+  top: 16%;
+  right: 5%;
+
+  width: 50%;
+  height: auto;
+
+  display: flex;
+}
+
+.aboutgame-conteiener-texts {
+  width: 65%;
+  margin-right: 3%;
+}
+
+.aboutgame-conteiener-texts h3 {
+  font-family: 'Open Sans';
+  text-align: end;
+  font-size: 1.8vw;
+}
+
+.text-divider {
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  width: 35%;
+  height: 2%;
+  background-color: #2d2d2d;
+
+  margin-left: auto;
+}
+
+.aboutgame-conteiener-texts p {
+  text-align: end;
+  font-size: 1.2vw;
+}
+
+.aboutgame-conteiner-imagem {
+  width: 50%;
+}
+
+.aboutgame-conteiner-imagem img {
+  width: 100%;
+}
+
+.main-divisor {
+  position: absolute;
+
+  width: 76%;
+
+  top: 45%;
+  right: 9.98%;
+}
+
+.main-imagem-personagem1 {
+  position: absolute;
+
+  width: 40%;
+
+  top: 50%;
+  left: 15%;
+  z-index: 1;
+
+  filter: drop-shadow(5px 10px 15px black) contrast(1.2);
+}
+
+.main-conteinerLinks {
+  position: absolute;
+  top: 58%;
+  left: 28%;
+
+  width: 40%;
+  height: 40%;
+
+  z-index: 2;
+}
+
+.conteinerLinks-Title {
+  position: relative;
+  top: -10%;
+
+  margin-left: auto;
+
+  width: 60%;
+
+  text-transform: uppercase;
+  line-height: 95%;
+  text-align: end;
+  font-family: 'Open Sans';
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.conteinerLinks-Title span {
+  font-weight: 900;
+}
+
+.conteinerLinks-navigation {
+  margin-right: 2%;
+}
+
+.conteinerLinks-navigation ul {
+  list-style: none;
+  text-align: end;
+  margin-left: auto;
+
+  width: 63%;
+}
+
+.conteinerLinks-navigation ul li {
+  font-family: 'Open Sans';
+  font-size: 1.3vw;
+  margin-bottom: 4%;
+
+  width: 100%;
+
+  border-radius: 2px;
+
+  padding: 1% 3% 1% 1%;
+
+  transition-duration: 2.9s;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.conteinerLinks-navigation ul li:hover {
+  background-color: #d74430;
+}
+
+.conteinerLinks-navigation ul li a {
+  text-decoration: none;
+  color: black;
+
+  transition-duration: 0.9s;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.conteinerLinks-navigation ul li:hover a {
+  color: whitesmoke;
+}
+
+.main-imagem-personagem2 {
+  position: absolute;
+
+  width: 19%;
+
+  top: 55%;
+  right: 14%;
+
+  z-index: 2;
+
+  filter: drop-shadow(5px 10px 25px black) contrast(1.2);
+}
+
+.conteiner-section-atributes {
+  width: 100%;
+  height: auto;
+
+  background-color: #2d2d2d;
+
+  position: relative;
+  top: -4px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionAtributes-title {
+  text-transform: uppercase;
+
+  font-family: 'Soreveign';
+  font-style: normal;
+  font-size: 3vw;
+
+  color: #ffffff;
+
+  position: relative;
+  top: 0%;
+  left: 13%;
+
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
+
+.sectionAtributes-content-position {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionAtributes-conteiner-images {
+  position: relative;
+  top: 0%;
+
+  /* overflow: hidden; */
+
+  width: 90%;
+  max-height: 25vw;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.container-images1 {
+  width: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-images1 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* A classe referenciada depois do hover está mais abaixo porém aparece aqui em cima pois dentro de conteiner 1 tem um iten usando essa classe*/
+.container-images1:hover .content-box-imagesatribute {
+  z-index: 1;
+  opacity: 1;
+  bottom: 0px;
+}
+
+.container-images1:hover .container-images-linedivisors {
+  z-index: 10;
+  opacity: 5;
+}
+
+/* Usados também no container-images2 porém apareceu primeiro no images1... */
+.container-images-linedivisors {
+  background-color: white;
+  position: absolute;
+
+  z-index: -1;
+  opacity: 0;
+
+  transition-property: z-index opacity;
+  transition-delay: 1.1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.divisor1 {
+  width: 17%;
+  height: 2%;
+
+  top: 0px;
+  left: 0px;
+}
+
+.divisor2 {
+  width: 1.5%;
+  height: 28%;
+  top: 0;
+  left: 0;
+}
+
+.divisor3 {
+  width: 17%;
+  height: 2%;
+
+  bottom: 0.2px;
+  right: 0px;
+}
+
+.divisor4 {
+  width: 1.2%;
+  height: 28%;
+  bottom: 0.2px;
+  right: 0px;
+}
+
+/* Estiliza os itens do conteiner vermelho que possui os textos... Os valores de fontes usados aqui serão padrão para o primeiro conteiener, porém, uma classe será criada para replicar o mesmo valor nos outros conteiners.*/
+.content-box-imagesatribute {
+  position: absolute;
+  bottom: 100%;
+  z-index: -10;
+  opacity: 0;
+
+  width: 107%;
+  height: 107%;
+
+  border-radius: 1px;
+  background-color: #fc2e2aaf;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: all;
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  font-size: 1.2vw;
+}
+
+.content-box-imagesatribute h3 {
+  text-transform: uppercase;
+  color: whitesmoke;
+
+  font-family: 'Open Sans';
+  font-size: 3vw;
+
+  width: 40%;
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.content-box-imagesatribute p {
+  width: 80%;
+  color: whitesmoke;
+
+  font-size: 1.4vw;
+  font-weight: 300;
+  font-family: 'Open Sans';
+
+  position: absolute;
+  left: 11%;
+  top: 43%;
+}
+
+.content-box-imagesatribute a {
+  border: 3px solid whitesmoke;
+  border-radius: 2px;
+  padding: 2% 7%;
+
+  font-size: 1.4vw;
+  font-family: 'Open Sans';
+
+  color: whitesmoke;
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 8%;
+  left: 4.5%;
+}
+/* Até esse ponto */
+
+.conteiner-images2 {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  position: absolute;
+  right: 0px;
+}
+
+.conteiner-image-overflow {
+  position: relative;
+
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.conteiner-image-overflow img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Seta os valores de fontes para os 4 conteiners menores... */
+.images2-contentbox-fonts {
+}
+
+.images2-contentbox-fonts h3 {
+  font-size: 1.3vw;
+  line-height: 105%;
+}
+
+.images2-contentbox-fonts p {
+  font-size: 0.8vw;
+  width: 80%;
+}
+
+.images2-contentbox-fonts a {
+  border: 2px solid whitesmoke;
+  border-radius: 1px;
+  padding: 1.4% 8.5%;
+
+  font-size: 1.1vw;
+}
+
+/* Filtros colocados de forma diferente em cada imagem... */
+#filter-img1 {
+  filter: contrast(1.3) brightness(90%);
+}
+
+#filter-img2 {
+  filter: contrast(2) brightness(70%);
+}
+
+#filter-img3 {
+  filter: contrast(1.2) brightness(70%);
+}
+
+#filter-img4 {
+  filter: contrast(1.5) brightness(70%);
+}
+
+#filter-img5 {
+  filter: contrast(1.7) brightness(80%);
+}
+
+/* Segue o mesmo intuito do hover do container-images1, porém, no conteinerimagem2 as imagens estão dentro de um novo conteiner conteiner-image-overflow, o que não deixou reutilizarmos o mesmo css.. Tentar corrigir isso no futuro... */
+.conteiner-image-overflow:hover .content-box-imagesatribute {
+  opacity: 1;
+  bottom: 0px;
+  z-index: 1;
+}
+
+/* Diferente do conteiner anterior que usamos essa animação, esse é um conteiner dentro do conteiner principal (images2) por isso, temos 4 conteiners distribuidos dentro do mesmo... */
+.conteiner-image-overflow:hover .container-images-linedivisors {
+  z-index: 10;
+  opacity: 5;
+}
+
+/* Conteiner com os personagens de braçadeira */
+.conteiner-hierarchy {
+  position: relative;
+  top: 0%;
+  width: 90%;
+
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.conteiner-hierarchy img {
+  width: 100%;
+  height: auto;
+}
+
+.sectionAtributes-paragraf {
+  position: relative;
+  top: 0%;
+  right: 5%;
+
+  text-align: start;
+  align-self: flex-end;
+
+  width: 65%;
+
+  font-family: 'Open Sans';
+  font-size: 1rem;
+
+  z-index: 20;
+  color: #b3b3b3;
+}
+
+/* O nome refere a section como jogar mas esse titulo está dentro do conteiner da sectionAtributes :DD */
+.section-comoJogar-title {
+  text-transform: uppercase;
+
+  font-family: 'Soreveign';
+  font-style: normal;
+  font-size: 3vw;
+
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+  color: #ffffff;
+}
+
+.section-comoJogar-boneco {
+  position: absolute;
+  bottom: -18%;
+  left: 5%;
+
+  width: 25%;
+
+  filter: drop-shadow(5px 10px 15px black) contrast(1.2);
+}
+
+.conteiner-section-download {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+.sectionDownload-content-position {
+  position: relative;
+  top: -1%;
+
+  width: 100%;
+  height: 100%;
+}
+
+.conteiner-itens-download {
+  position: relative;
+  left: 30%;
+  width: 60%;
+
+  background-color: #1da8a15e;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #ffffff;
+}
+
+.card-download {
+  margin-top: 10%;
+
+  width: 25%;
+  height: 50%;
+
+  font-family: 'Open Sans';
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleCard {
+  font-size: 2vw;
+  font-weight: 100;
+
+  margin-bottom: 8%;
+}
+
+.conteiner-content-download {
+  position: relative;
+
+  width: 80%;
+  height: auto;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.conteiner-content-download:hover .divisor-animate {
+  background-color: #d74430;
+}
+
+.conteiner-content-download:hover .background-animate {
+  left: 0%;
+}
+
+/* Tracejado embaixo do texto do botão na seção downloads, esse item é absoluto e está dentro do conteiner do botão de download */
+.divisor-animate {
+  position: absolute;
+  top: 300%;
+
+  width: 40%;
+  height: 10%;
+
+  border-radius: 5px;
+
+  background-color: black;
+
+  transition-duration: 1.2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.button-download {
+  background-color: black;
+  padding: 7% 12%;
+  color: whitesmoke;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.background-animate {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  background-color: #d74430;
+
+  transition-duration: 1.2s;
+  transition-property: left;
+  transition-timing-function: ease;
+}
+
+.button-download h3 {
+  position: relative;
+  z-index: 9;
+
+  font-size: 1.5vw;
+  font-weight: 100;
+}
+
+.card-paragraf {
+  margin-top: 15%;
+  width: 60%;
+
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+/* Modifica apenas o valor do primeiro card para manter a igualdade... :D */
+#firstCardParagraf {
+  font-size: 1.05vw;
+  font-weight: 400;
+}
+
+.conteiner-itens-orangeContent {
+  position: relative;
+}
+
+.sectionDownload-orangeContent-container {
+  width: 63.2%;
+  height: auto;
+
+  margin-top: 20%;
+
+  padding-top: 5%;
+  padding-left: 12%;
+  padding-bottom: 0.1%;
+
+  background-color: #ff5a56;
+}
+
+.sectionDownload-orangeContent-title {
+  text-transform: uppercase;
+
+  font-family: 'Soreveign';
+  font-style: normal;
+  font-size: 3vw;
+
+  color: #ffffff;
+
+  margin-top: 2%;
+}
+
+.sectionDownload-orangeContent-paragraf {
+  width: 60%;
+  margin-top: 3%;
+
+  font-family: 'Open Sans';
+  font-size: 1.2vw;
+  font-weight: 100;
+
+  color: #ffffff;
+}
+
+.sectionDownload-orangeContent-conteinerLinks {
+  margin-top: 3%;
+  width: 60%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sectionDownload-orangeContent-conteinerLinks img {
+  width: 49%;
+}
+
+.sectionDownload-orangeContent-divider {
+  margin-top: 12%;
+  width: 98% !important;
+}
+
+.sectionDownload-orangeContent-StarWarsPng {
+  width: 30%;
+
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.sectionDownload-orangeContent-ParagrafFinal {
+  width: 65%;
+
+  font-family: 'Open Sans';
+  font-size: 1.2vw;
+  font-weight: 100;
+
+  color: #ffffffbd;
+
+  margin-bottom: 3%;
+}
+
+.sectionDownload-bonecao {
+  position: absolute;
+  right: 7.2%;
+  top: -15%;
+
+  width: 40%;
+
+  filter: drop-shadow(5px 10px 25px black) contrast(1.2) brightness(100%);
+}
+
+/* Prezando responsividade para telas maiores... */
+@media (min-width: 1920px) {
+  .conteiner-header-legiao {
+    /* Ajustei a largura do conteiner*/
+    padding-bottom: 120px;
+    right: 10%;
+    width: auto;
+  }
+  /* Travei a fonte quando chega na largura máxima... */
+  .conteiner-header-legiao h2 {
+    font-size: 30px;
+  }
+
+  .conteiner-header-legiao span {
+    font-size: 30px;
+  }
+
+  .cardVermelho-title {
+    font-size: 42px;
+  }
+
+  .cardVermelho-paragraf {
+    font-size: 20px;
+  }
+
+  .cardVermelho-button {
+    font-size: 20px;
+  }
+
+  .aboutgame-conteiener-texts h3 {
+    font-size: 35px;
+  }
+
+  /* primeiro card vermelho dos atributos */
+  .content-box-imagesatribute h3 {
+    font-size: 58px;
+  }
+
+  .content-box-imagesatribute p {
+    font-size: 28px;
+  }
+
+  .content-box-imagesatribute a {
+    font-size: 26px;
+  }
+
+  /* segundo card vermelho dos atributos... */
+  .images2-contentbox-fonts h3 {
+    font-size: 32px;
+  }
+
+  .images2-contentbox-fonts p {
+    font-size: 17px;
+  }
+
+  .images2-contentbox-fonts a {
+    font-size: 16px;
+  }
+
+  .aboutgame-conteiener-texts p {
+    font-size: 25px;
+  }
+
+  .sectionAtributes-title {
+    font-size: 60px;
+  }
+
+  .conteinerLinks-Title {
+    font-size: 80px;
+  }
+
+  .conteinerLinks-navigation ul li {
+    font-size: 25px;
+  }
+
+  .section-comoJogar-title {
+    font-size: 60px;
+  }
+
+  .titleCard {
+    font-size: 40px;
+  }
+
+  .button-download h3 {
+    font-size: 30px;
+  }
+
+  .card-paragraf {
+    font-size: 20px;
+  }
+
+  #firstCardParagraf{
+    font-size: 20px;
+  }
+
+  .sectionDownload-orangeContent-title {
+    font-size: 60px;
+  }
+
+  .sectionDownload-orangeContent-paragraf {
+    font-size: 22px;
+  }
+
+  .sectionDownload-orangeContent-ParagrafFinal {
+    font-size: 22px;
+  }
+}
+
+/* Escopo da responsividade da main... */
+@media (max-width: 768px) {
+  .conteiner-section-estrutura {
+    position: relative;
+    height: 100%;
+  }
+
+  /* Vai para a direita*/
+  .main-content-position {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    padding-top: 10%;
+    padding-bottom: 69%;
+  }
+
+  .imagemCantoMain {
+    position: absolute;
+    width: 70%;
+  }
+
+  .main-cardVermelho {
+    position: relative;
+    width: 60%;
+    left: 30%;
+
+    top: 0%;
+    right: 0%;
+    z-index: 10;
+  }
+
+  .cardVermelho-title {
+    font-size: 7.2vw;
+  }
+
+  .cardVermelho-paragraf {
+    font-size: 4vw;
+    margin-top: 6%;
+    text-align: center;
+  }
+
+  .cardVermelho-button {
+    font-size: 4vw;
+    margin-top: 10%;
+  }
+
+  /* Vai descer e crescer */
+  .main-cardAboutGame {
+    position: relative;
+    left: 30%;
+    margin-top: 5%;
+
+    right: 0%;
+    z-index: 9;
+    width: 70%;
+    height: auto;
+
+    /* fiz ficar em coluna para aumentar eles individualmente */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Colocando o texto pra baixo e a imagem pra cima */
+  .aboutgame-conteiener-texts {
+    order: 2;
+    width: 100%;
+  }
+
+  .aboutgame-conteiener-texts h3 {
+    margin-top: 4%;
+    font-size: 4.8vw;
+    position: relative;
+    right: 14%;
+  }
+
+  .text-divider {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: auto;
+
+    position: relative;
+    right: 14.5%;
+    z-index: 9;
+
+    border-radius: 5px;
+
+    width: 48%;
+    height: 3px;
+  }
+
+  .aboutgame-conteiener-texts p {
+    text-align: end;
+    width: 110%;
+    font-size: 3.8vw;
+
+    position: relative;
+    right: 24%;
+  }
+
+  .aboutgame-conteiner-imagem {
+    order: 1;
+    width: 86%;
+  }
+
+  .main-divisor {
+    position: absolute;
+    top: 77%;
+    right: 9.8%;
+    margin-left: auto;
+
+    width: 76%;
+    height: 5px;
+
+    border-radius: 5px;
+  }
+
+  /* red */
+  .main-imagem-personagem1 {
+    position: absolute;
+    width: 47%;
+
+    top: 84%;
+    left: 2%;
+    z-index: 1;
+  }
+
+  .main-conteinerLinks {
+    position: absolute;
+    top: 85%;
+    left: 26%;
+
+    height: auto;
+  }
+
+  .conteinerLinks-Title {
+    position: relative;
+    top: -9.4%;
+    left: 13%;
+    width: 70%;
+    font-size: 5vw;
+  }
+
+  .conteinerLinks-navigation {
+    margin-right: 0%;
+
+    position: relative;
+    top: -9%;
+    left: 10%;
+  }
+
+  .conteinerLinks-navigation ul {
+    list-style: none;
+    text-align: end;
+
+    width: 104%;
+  }
+
+  .conteinerLinks-navigation ul li {
+    font-family: 'Open Sans';
+    margin-bottom: 1.8%;
+    width: 100%;
+    border-radius: 2px;
+    padding: 0.5% 1.5% 0.5% 0.5%;
+
+    font-weight: 600;
+
+    font-size: 2.3vw;
+  }
+
+  /* Blue */
+  .main-imagem-personagem2 {
+    position: absolute;
+    width: 26%;
+
+    top: 83.9%;
+    right: 2%;
+    z-index: 1;
+  }
+}
+
+/* Escopo de responsividade da seção atributos... */
+@media (max-width: 768px) {
+  .sectionAtributes-title {
+    font-size: 5vw;
+    text-align: center;
+    position: unset;
+  }
+
+  .sectionAtributes-conteiner-images {
+    flex-wrap: wrap;
+    max-height: unset;
+  }
+
+  .container-images1 {
+    width: 100%;
+  }
+
+  /* Primeiro card vermelho da seção atributos... */
+  .content-box-imagesatribute h3 {
+    font-size: 5vw;
+  }
+
+  .content-box-imagesatribute p {
+    font-size: 3.8vw;
+    top: 43%;
+  }
+
+  .content-box-imagesatribute a {
+    font-size: 3vw;
+    bottom: 8%;
+    border: 3px solid whitesmoke;
+  }
+
+  .conteiner-images2 {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 10%;
+
+    position: unset;
+  }
+
+  /* Segundo card vermelho da seção atributos... */
+  .images2-contentbox-fonts a {
+    padding: 2% 7%;
+  }
+
+  .conteiner-image-overflow {
+    position: relative;
+
+    width: 100%;
+    height: 25%;
+  }
+
+  .conteiner-hierarchy {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .sectionAtributes-paragraf {
+    width: 60%;
+    font-size: 2vw;
+    position: relative;
+    right: 10%;
+  }
+
+  .section-comoJogar-title {
+    position: relative;
+    right: -20%;
+    font-size: 4.2vw;
+  }
+}
+
+/* Escopo de responsividade da seção Como jogar... */
+@media (max-width: 768px) {
+  .section-comoJogar-boneco {
+    position: absolute;
+    bottom: -36%;
+    left: -43%;
+    z-index: 9;
+    width: 105%;
+  }
+
+  .conteiner-itens-download {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+
+    left: 20%;
+    flex-direction: column;
+  }
+
+  .first-card {
+    margin-top: 0px;
+  }
+
+  .card-download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #firstCardParagraf {
+    font-size: 3.5vw;
+  }
+
+  .titleCard {
+    font-size: 8vw;
+    font-weight: 200;
+    margin-bottom: 2%;
+  }
+
+  .conteiner-content-download {
+    position: relative;
+    width: 140%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-download {
+    width: 30%;
+    background-color: black;
+    padding: 2.5% 6%;
+    color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .button-download h3 {
+    font-size: 4vw;
+  }
+
+  .card-paragraf {
+    margin-top: 0%;
+    font-size: 4vw;
+    width: 40%;
+  }
+
+  /* aparece depois mas está dentro do conteiner do botao */
+  .divisor-animate {
+    position: absolute;
+    top: 200%;
+    height: 10%;
+
+    width: 10%;
+  }
+}
+
+/* Escopo de responsividade do footer... */
+@media (max-width: 768px) {
+  .conteiner-itens-orangeContent {
+    margin-top: 15%;
+  }
+
+  /* Conteiner laranja */
+  .sectionDownload-orangeContent-container {
+    width: 100%;
+    height: auto;
+
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-bottom: 40%;
+    margin-bottom: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .sectionDownload-orangeContent-title {
+    font-size: 14vw;
+    text-align: center;
+    margin-top: 0%;
+  }
+
+  .sectionDownload-orangeContent-paragraf {
+    width: 90%;
+    margin-top: 0%;
+    padding-left: 10%;
+    margin-bottom: 1%;
+
+    font-size: 3.4vw;
+
+    font-weight: 100;
+    color: #ffffff;
+  }
+
+  .sectionDownload-orangeContent-conteinerLinks {
+    width: 82%;
+    margin: 8% auto 0;
+  }
+
+  .sectionDownload-orangeContent-divider {
+    margin-top: 4%;
+    width: 98% !important;
+  }
+
+  .sectionDownload-orangeContent-StarWarsPng {
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0;
+
+    align-self: center;
+  }
+
+  .sectionDownload-orangeContent-ParagrafFinal {
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    font-size: 3.8vw;
+    align-self: center;
+  }
+
+  .sectionDownload-bonecao {
+    right: 13%;
+    top: 80%;
+    width: 80%;
+  }
+}
